@@ -1,6 +1,7 @@
 # Build output
 build/
 dist/
+edgejs-src/
 
 # Dependencies
 node_modules/
