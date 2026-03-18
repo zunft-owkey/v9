@@ -30,11 +30,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. V8 embedding API shims pass static_assert checks for wasm32 pointer widths
   3. The .wasm binary loads in Chrome without traps, segfaults, or initialization failures
   4. Wasm binary size is under 50MB raw (module whitelist applied)
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md — Consolidate shim headers with pointer width assertions and CMake/patch infrastructure
+- [ ] 01-02-PLAN.md — Compile EdgeJS to .wasm via iterative error fixing and browser load verification
 
 ### Phase 2: N-API Bridge Hardening
 **Goal**: The N-API bridge correctly propagates errors, manages handle lifecycles, and performs acceptably for sustained sessions
@@ -119,7 +119,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Wasm Compilation | 0/? | Not started | - |
+| 1. Wasm Compilation | 0/2 | Planning complete | - |
 | 2. N-API Bridge Hardening | 0/? | Not started | - |
 | 3. Core Modules + Filesystem | 0/? | Not started | - |
 | 4. Networking | 0/? | Not started | - |
